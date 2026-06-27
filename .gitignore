@@ -19,6 +19,9 @@ lib64/
 parts/
 sdist/
 var/
+.DS_Store
+datasets/
+artifacts/
 wheels/
 share/python-wheels/
 *.egg-info/
