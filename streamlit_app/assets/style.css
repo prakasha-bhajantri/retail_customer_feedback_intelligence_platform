@@ -1,0 +1,67 @@
+/* Main container */
+.block-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 1400px;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    border-right: 1px solid #E5E7EB;
+}
+
+/* Reduce title size */
+h1 {
+    font-size: 2rem !important;
+    font-weight: 700;
+    color: #2563EB;
+}
+
+h2 {
+    font-size: 1.5rem !important;
+}
+
+h3 {
+    font-size: 1.15rem !important;
+}
+
+/* Paragraphs */
+p {
+    font-size: 0.95rem;
+}
+
+/* Metrics */
+div[data-testid="stMetric"] {
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.06);
+}
+
+/* Metric value */
+div[data-testid="stMetricValue"] {
+    font-size: 1.8rem !important;
+}
+
+/* Metric label */
+div[data-testid="stMetricLabel"] {
+    font-size: 0.85rem !important;
+}
+
+/* Dataframe */
+div[data-testid="stDataFrame"] {
+    border-radius: 10px;
+}
+
+/* Buttons */
+.stButton>button {
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Sidebar navigation */
+.nav-link {
+    font-size: 15px !important;
+}
