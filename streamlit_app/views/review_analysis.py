@@ -12,7 +12,6 @@ import streamlit as st
 from src.pipeline.review_pipeline import ReviewPipeline
 from streamlit_app.config import SENTIMENT_MODEL
 
-
 @st.cache_resource
 def load_pipeline():
     return ReviewPipeline(

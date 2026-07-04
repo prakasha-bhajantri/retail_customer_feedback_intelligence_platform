@@ -1,45 +1,11 @@
-"""
-Configuration for Streamlit Application.
-"""
+from src.core.config import config
 
-from pathlib import Path
-
-####################################################
-# Project
-####################################################
-
-PROJECT_NAME = "Retail Customer Feedback Intelligence Platform"
-
-PAGE_TITLE = PROJECT_NAME
+PAGE_TITLE = config["app"]["name"]
 
 PAGE_ICON = "🛍️"
 
 LAYOUT = "wide"
 
-####################################################
-# Models
-####################################################
+SENTIMENT_MODEL = config["models"]["sentiment"]
 
-SENTIMENT_MODEL = Path(
-    "artifacts/sentiment/best_model"
-)
-
-####################################################
-# Upload
-####################################################
-
-SUPPORTED_FILE_TYPES = [
-    "csv",
-]
-
-####################################################
-# Theme
-####################################################
-
-PRIMARY_COLOR = "#2563EB"
-
-POSITIVE_COLOR = "#16A34A"
-
-NEGATIVE_COLOR = "#DC2626"
-
-NEUTRAL_COLOR = "#F59E0B"
+NER_MODEL = config["models"]["ner"]

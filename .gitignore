@@ -20,7 +20,11 @@ parts/
 sdist/
 var/
 .DS_Store
-datasets/
+data/
+models/
+output
+.DS_Store
+logs/
 artifacts/
 wheels/
 share/python-wheels/

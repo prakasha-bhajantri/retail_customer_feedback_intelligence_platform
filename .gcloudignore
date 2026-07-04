@@ -1,0 +1,22 @@
+# Use .gitignore as base
+#!include:.gitignore
+
+# But INCLUDE artifacts for Cloud Build
+!artifacts/
+!artifacts/**
+
+# Exclude datasets
+datasets/
+
+# Exclude notebooks
+*.ipynb
+
+# Exclude virtual environments
+venv/
+.venv/
+
+# Exclude logs
+logs/
+
+# Exclude macOS files
+.DS_Store

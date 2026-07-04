@@ -1,0 +1,22 @@
+app:
+  name: Retail Customer Feedback Intelligence Platform
+  version: 1.0.0
+  environment: development
+
+models:
+  sentiment: models/sentiment/best_model
+  ner: models/retail_ner/best_model
+
+streamlit:
+  title: Retail Customer Feedback Intelligence Platform
+
+logging:
+  level: INFO
+
+storage:
+  provider: gcs
+  bucket: retail-feedback-models
+  auto_download: true
+
+gcp:
+  project_id: project-7ad7f021-e26f-441c-bb8

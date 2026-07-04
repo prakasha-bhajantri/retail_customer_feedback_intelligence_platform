@@ -57,6 +57,12 @@ if css_path.exists():
 # Import Views
 ##############################################################################
 
+from src.utils.model_downloader import ModelDownloader
+
+downloader = ModelDownloader()
+
+downloader.download_all_models()
+
 from streamlit_app.views.home import show_home
 from streamlit_app.views.review_analysis import show_review_analysis
 from streamlit_app.views.dashboard import show_dashboard

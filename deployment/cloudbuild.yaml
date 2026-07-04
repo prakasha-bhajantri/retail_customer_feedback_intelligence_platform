@@ -1,0 +1,29 @@
+# ==========================================================
+# Retail Customer Feedback Intelligence Platform
+# Cloud Build Configuration
+# ==========================================================
+
+substitutions:
+  _REGION: asia-south1
+  _REPOSITORY: retail-feedback
+  _IMAGE: retail-feedback-intelligence
+
+steps:
+  # ---------------------------------------------------------
+  # Build Docker Image
+  # ---------------------------------------------------------
+  - id: Build Docker Image
+    name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -f
+      - deployment/Dockerfile
+      - -t
+      - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}:latest
+      - .
+
+images:
+  - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}:latest
+
+options:
+  logging: CLOUD_LOGGING_ONLY
